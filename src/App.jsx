@@ -1,5 +1,7 @@
-function App() {
-  return <div className='App'>Wowie Zowie</div>;
-}
+import Nav from "./components/Nav";
+
+const App = () => {
+  return <Nav />;
+};
 
 export default App;
