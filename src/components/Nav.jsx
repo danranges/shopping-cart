@@ -1,7 +1,6 @@
-import Nav from "react-bootstrap/Nav"
 import { Navbar as NavbarBs } from "react-bootstrap"
+import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
 import { NavLink } from "react-router-dom"
 
 const NavBar = () => {
