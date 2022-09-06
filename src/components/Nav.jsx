@@ -7,7 +7,9 @@ const NavBar = () => {
   return (
     <NavbarBs bg="light" className="shadow-sm mb-3" expand="sm">
       <Container fluid>
-        <NavbarBs.Brand href="/">Klatre Sko</NavbarBs.Brand>
+        <NavbarBs.Brand href="/">
+          <img src="/imgs/tenaya.svg" height={"40px"} />
+        </NavbarBs.Brand>
         <NavbarBs.Toggle />
         <NavbarBs.Collapse>
           <Nav>
