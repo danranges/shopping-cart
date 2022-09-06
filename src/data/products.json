@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Mastia",
+    "price": 2149,
+    "imgUrl": "/img/mastia.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Mundaka",
+    "price": 2099,
+    "imgUrl": "/img/mundaka.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Iati",
+    "price": 1949,
+    "imgUrl": "/img/iati.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Tarifa",
+    "price": 1899,
+    "imgUrl": "/img/tarifa.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Oasi",
+    "price": 1899,
+    "imgUrl": "/img/oasi.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Oasi LV",
+    "price": 1899,
+    "imgUrl": "/img/oasi-lv.jpeg"
+  }
+]
