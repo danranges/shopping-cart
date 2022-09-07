@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <NavBar />
-      <Container fluid>
+      <Container fluid className="mb-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
