@@ -53,7 +53,7 @@ const ProductCard = ({ product }) => {
               <Button
                 variant="outline-danger"
                 onClick={() => removeItem(id)}
-                className="align-items-middle position-absolute start-0 "
+                className="align-items-middle position-absolute end-0 "
               >
                 <BsTrash />
               </Button>
