@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 import { UseShoppingCart } from "../context/CartContext"
+import { BsTrash } from "react-icons/bs"
 
 const ProductCard = ({ product }) => {
   const { id, name, price, imgUrl } = product
@@ -17,14 +18,14 @@ const ProductCard = ({ product }) => {
           <span>{name}</span>
           <span className="text-muted">{price}</span>
         </Card.Title>
-        <div className=" d-grid g-2 mt-auto">
+        <div className=" d-grid g-2 mt-auto position-relative">
           {qty === 0 ? (
             <Button variant="light" size="md" onClick={() => incrementItem(id)}>
               Add To Cart
             </Button>
           ) : (
             <div
-              className="d-flex flex-column w-100 align-items-center justify-content-center"
+              className="d-flex flex-row w-100 align-items-center justify-content-center"
               style={{ gap: "0.5rem" }}
             >
               <div
@@ -49,8 +50,12 @@ const ProductCard = ({ product }) => {
                   +
                 </Button>
               </div>
-              <Button variant="outline-danger" onClick={() => removeItem(id)}>
-                Remove from Cart
+              <Button
+                variant="outline-danger"
+                onClick={() => removeItem(id)}
+                className="align-items-middle position-absolute start-0 "
+              >
+                <BsTrash />
               </Button>
             </div>
           )}
