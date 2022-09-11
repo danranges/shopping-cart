@@ -1,11 +1,11 @@
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
-import { UseCart, UseCartUpdate } from "../context/CartContext"
+import { UseShoppingCart } from "../context/CartContext"
 
 const ProductCard = ({ product }) => {
   const { id, name, price, imgUrl } = product
-  const shoppingCart = UseCart()
-  const updateCart = UseCartUpdate()
+  const { getCartQty, incrementItem, decrementItem, removeItem } =
+    UseShoppingCart()
   const qty = 1
 
   return (
@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
         </Card.Title>
         <div className=" d-grid g-2 mt-auto">
           {qty === 0 ? (
-            <Button variant="light" size="md" onClick={updateCart}>
+            <Button variant="light" size="md" onClick={() => incrementItem(id)}>
               Add To Cart
             </Button>
           ) : (
@@ -34,7 +34,7 @@ const ProductCard = ({ product }) => {
                   variant="outline-dark"
                   size="md"
                   className="d-flex align-text-center"
-                  onClick={updateCart}
+                  onClick={() => decrementItem(id)}
                 >
                   -
                 </Button>
@@ -43,12 +43,12 @@ const ProductCard = ({ product }) => {
                   variant="outline-dark"
                   size="md"
                   className="d-flex align-text-center"
-                  onClick={updateCart}
+                  onClick={() => incrementItem(id)}
                 >
                   +
                 </Button>
               </div>
-              <Button variant="outline-danger" onClick={updateCart}>
+              <Button variant="outline-danger" onClick={() => removeItem(id)}>
                 Remove from Cart
               </Button>
             </div>

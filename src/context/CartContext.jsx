@@ -1,29 +1,38 @@
 import React, { useContext, useState } from "react"
 
 const CartContext = React.createContext()
-const CartUpdateContext = React.createContext()
 
-export function UseCart() {
+export function UseShoppingCart() {
   return useContext(CartContext)
-}
-
-export function UseCartUpdate() {
-  return useContext(CartUpdateContext)
 }
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([])
 
-  const updateCart = () => {
+  const getCartQty = (id) => {
+    return cart
+  }
+
+  const incrementItem = (id) => {
     setCart((prevCart) => prevCart)
-    console.log("cart updated")
+    console.log(`item ${id} incremented`)
+  }
+
+  const decrementItem = (id) => {
+    setCart((prevCart) => prevCart)
+    console.log(`item ${id} decremented`)
+  }
+
+  const removeItem = (id) => {
+    setCart((prevCart) => prevCart)
+    console.log(`item ${id} removed`)
   }
 
   return (
-    <CartContext.Provider value={cart}>
-      <CartUpdateContext.Provider value={updateCart}>
-        {children}
-      </CartUpdateContext.Provider>
+    <CartContext.Provider
+      value={{ getCartQty, incrementItem, decrementItem, removeItem }}
+    >
+      {children}
     </CartContext.Provider>
   )
 }
