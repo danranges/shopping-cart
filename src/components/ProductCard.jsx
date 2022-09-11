@@ -6,7 +6,8 @@ const ProductCard = ({ product }) => {
   const { id, name, price, imgUrl } = product
   const { getCartQty, incrementItem, decrementItem, removeItem } =
     UseShoppingCart()
-  const qty = 1
+
+  const qty = getCartQty(id)
 
   return (
     <Card border="light">
