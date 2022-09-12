@@ -9,6 +9,10 @@ export function UseShoppingCart() {
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([])
 
+  const getCart = () => {
+    return cart
+  }
+
   const getCartQty = (id) => {
     return cart.find((item) => id === item.id)?.qty || 0
   }
@@ -39,7 +43,7 @@ export function CartProvider({ children }) {
 
   return (
     <CartContext.Provider
-      value={{ getCartQty, incrementItem, decrementItem, removeItem }}
+      value={{ getCart, getCartQty, incrementItem, decrementItem, removeItem }}
     >
       {children}
     </CartContext.Provider>

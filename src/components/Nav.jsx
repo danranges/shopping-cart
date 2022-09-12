@@ -1,9 +1,14 @@
-import { Navbar as NavbarBs } from "react-bootstrap"
+import { Badge, Navbar as NavbarBs } from "react-bootstrap"
 import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import { NavLink } from "react-router-dom"
+import { UseShoppingCart } from "../context/CartContext"
 
 const NavBar = () => {
+  const { getCart } = UseShoppingCart()
+
+  const cartQty = getCart().reduce((quantity, item) => quantity + item.qty, 0)
+
   return (
     <NavbarBs bg="light" className="shadow-sm mb-3" expand="sm" sticky="top">
       <Container fluid>
@@ -21,6 +26,9 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link as={NavLink} to="/Cart">
               Cart
+              <Badge pill bg="secondary" className="mx-2">
+                {cartQty}
+              </Badge>
             </Nav.Link>
           </Nav>
         </NavbarBs.Collapse>
