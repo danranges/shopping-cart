@@ -26,9 +26,11 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link as={NavLink} to="/Cart">
               Cart
-              <Badge pill bg="secondary" className="mx-2">
-                {cartQty}
-              </Badge>
+              {cartQty ? (
+                <Badge pill bg="secondary" className="mx-2">
+                  {cartQty}
+                </Badge>
+              ) : null}
             </Nav.Link>
           </Nav>
         </NavbarBs.Collapse>
