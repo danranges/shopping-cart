@@ -13,7 +13,7 @@ export function CartProvider({ children }) {
     return cart
   }
 
-  const getCartQty = (id) => {
+  const getItemQty = (id) => {
     return cart.find((item) => id === item.id)?.qty || 0
   }
 
@@ -43,7 +43,7 @@ export function CartProvider({ children }) {
 
   return (
     <CartContext.Provider
-      value={{ getCart, getCartQty, incrementItem, decrementItem, removeItem }}
+      value={{ getCart, getItemQty, incrementItem, decrementItem, removeItem }}
     >
       {children}
     </CartContext.Provider>

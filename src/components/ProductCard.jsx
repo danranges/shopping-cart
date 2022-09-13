@@ -1,14 +1,18 @@
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
+import promotions from "../data/promotions.json"
 import { UseShoppingCart } from "../context/CartContext"
 import { BsTrash } from "react-icons/bs"
+import formatPrice from "../utils/formatPrice"
+import React from "react"
 
 const ProductCard = ({ product }) => {
   const { id, name, price, imgUrl } = product
-  const { getCartQty, incrementItem, decrementItem, removeItem } =
+  const { getItemQty, incrementItem, decrementItem, removeItem } =
     UseShoppingCart()
 
-  const qty = getCartQty(id)
+  const qty = getItemQty(id)
+  const promotion = promotions.find((item) => id === item.id)?.discount || 0
 
   return (
     <Card border="light">
@@ -16,8 +20,21 @@ const ProductCard = ({ product }) => {
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between">
           <span>{name}</span>
-          <span className="text-muted">{price}</span>
         </Card.Title>
+        <Card.Subtitle className="mb-2">
+          {promotion ? (
+            <React.Fragment>
+              <span className="text-muted">
+                <s>{formatPrice(price)}</s>
+              </span>
+              <span className="text-danger ms-2">
+                {formatPrice(price, promotion)}
+              </span>
+            </React.Fragment>
+          ) : (
+            <span className="text-muted">{formatPrice(price)}</span>
+          )}
+        </Card.Subtitle>
         <div className=" d-grid g-2 mt-auto position-relative">
           {qty === 0 ? (
             <Button variant="light" size="md" onClick={() => incrementItem(id)}>

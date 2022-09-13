@@ -1,5 +1,12 @@
 [
   {
+    "id": 0,
+    "product line": "aerial-plus",
+    "name": "Indalo",
+    "price": 2199,
+    "imgUrl": "/imgs/indalo.jpeg"
+  },
+  {
     "id": 1,
     "product line": "aerial-plus",
     "name": "Mastia",
