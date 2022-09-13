@@ -1,38 +1,93 @@
 [
   {
     "id": 1,
+    "product line": "aerial-plus",
     "name": "Mastia",
     "price": 2149,
     "imgUrl": "/imgs/mastia.jpeg"
   },
   {
     "id": 2,
+    "product line": "aerial-plus",
     "name": "Mundaka",
     "price": 2099,
     "imgUrl": "/imgs/mundaka.jpeg"
   },
   {
     "id": 3,
+    "product line": "aerial-plus",
     "name": "Iati",
     "price": 1949,
     "imgUrl": "/imgs/iati.jpeg"
   },
   {
     "id": 4,
+    "product line": "aerial-plus",
     "name": "Tarifa",
     "price": 1899,
     "imgUrl": "/imgs/tarifa.jpeg"
   },
   {
     "id": 5,
+    "product line": "aerial-plus",
     "name": "Oasi",
     "price": 1899,
     "imgUrl": "/imgs/oasi.jpeg"
   },
   {
     "id": 6,
+    "product line": "aerial-plus",
     "name": "Oasi LV",
     "price": 1899,
     "imgUrl": "/imgs/oasi-lv.jpeg"
+  },
+  {
+    "id": 7,
+    "product line": "balance-pro",
+    "name": "Ra",
+    "price": 1699,
+    "imgUrl": "/imgs/ra.jpeg"
+  },
+  {
+    "id": 8,
+    "product line": "balance-pro",
+    "name": "Ra Woman",
+    "price": 1699,
+    "imgUrl": "/imgs/ra-woman.jpeg"
+  },
+  {
+    "id": 9,
+    "product line": "balance-pro",
+    "name": "Masai",
+    "price": 1699,
+    "imgUrl": "/imgs/masai.jpeg"
+  },
+  {
+    "id": 10,
+    "product line": "balance-pro",
+    "name": "Inti",
+    "price": 1699,
+    "imgUrl": "/imgs/inti.jpeg"
+  },
+  {
+    "id": 11,
+    "product line": "balance-pro",
+    "name": "Tatanka",
+    "price": 1699,
+    "imgUrl": "/imgs/tatanka.jpeg"
+  },
+  {
+    "id": 12,
+    "product line": "balance-pro",
+    "name": "Aqua +",
+    "price": 1699,
+    "imgUrl": "/imgs/aqua-plus.jpeg"
+  },
+  {
+    "id": 13,
+    "product line": "step-up",
+    "name": "Tanta",
+    "price": 1449,
+    "imgUrl": "/imgs/tanta.jpeg"
   }
 ]
