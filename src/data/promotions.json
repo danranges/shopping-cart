@@ -1,10 +1,14 @@
 [
   {
-    "id": 3,
+    "id": "oasi",
     "discount": 0.3
   },
   {
-    "id": 8,
+    "id": "ra",
+    "discount": 0.25
+  },
+  {
+    "id": "tanta",
     "discount": 0.4
   }
 ]

@@ -1,7 +1,7 @@
-import { Badge, Navbar as NavbarBs } from "react-bootstrap"
+import { Badge, Navbar as NavbarBs, NavDropdown } from "react-bootstrap"
 import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { UseShoppingCart } from "../context/CartContext"
 
 const NavBar = () => {
@@ -21,9 +21,21 @@ const NavBar = () => {
             <Nav.Link as={NavLink} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/Products">
-              Products
-            </Nav.Link>
+            <NavDropdown title="Products">
+              <NavDropdown.Item as={Link} to="/products">
+                All
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/products/aerial-plus">
+                Aerial Plus
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/products/balance-pro">
+                Balance Pro
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/products/step-up">
+                Step Up
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link as={NavLink} to="/Cart">
               Cart
               {cartQty ? (
