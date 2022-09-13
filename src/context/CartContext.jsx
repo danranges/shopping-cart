@@ -17,14 +17,15 @@ export function CartProvider({ children }) {
     return cart.find((item) => id === item.id)?.qty || 0
   }
 
-  const incrementItem = (id) => {
+  const incrementItem = (id, adjPrice) => {
     setCart((prevCart) =>
       prevCart.find((item) => id === item.id) == null
-        ? [...prevCart, { id, qty: 1 }]
+        ? [...prevCart, { id, qty: 1, price: adjPrice }]
         : prevCart.map((item) =>
             id === item.id ? { ...item, qty: item.qty + 1 } : item
           )
     )
+    console.log(cart)
   }
 
   const decrementItem = (id) => {
