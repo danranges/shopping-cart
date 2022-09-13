@@ -1,97 +1,97 @@
 [
   {
-    "id": 0,
+    "id": "indalo",
     "product line": "aerial-plus",
     "name": "Indalo",
     "price": 2199,
     "imgUrl": "/imgs/indalo.jpeg"
   },
   {
-    "id": 1,
+    "id": "mastia",
     "product line": "aerial-plus",
     "name": "Mastia",
     "price": 2149,
     "imgUrl": "/imgs/mastia.jpeg"
   },
   {
-    "id": 2,
+    "id": "mundaka",
     "product line": "aerial-plus",
     "name": "Mundaka",
     "price": 2099,
     "imgUrl": "/imgs/mundaka.jpeg"
   },
   {
-    "id": 3,
+    "id": "iati",
     "product line": "aerial-plus",
     "name": "Iati",
     "price": 1949,
     "imgUrl": "/imgs/iati.jpeg"
   },
   {
-    "id": 4,
+    "id": "tarifa",
     "product line": "aerial-plus",
     "name": "Tarifa",
     "price": 1899,
     "imgUrl": "/imgs/tarifa.jpeg"
   },
   {
-    "id": 5,
+    "id": "oasi",
     "product line": "aerial-plus",
     "name": "Oasi",
     "price": 1899,
     "imgUrl": "/imgs/oasi.jpeg"
   },
   {
-    "id": 6,
+    "id": "oasi-lv",
     "product line": "aerial-plus",
     "name": "Oasi LV",
     "price": 1899,
     "imgUrl": "/imgs/oasi-lv.jpeg"
   },
   {
-    "id": 7,
+    "id": "ra",
     "product line": "balance-pro",
     "name": "Ra",
     "price": 1699,
     "imgUrl": "/imgs/ra.jpeg"
   },
   {
-    "id": 8,
+    "id": "ra-woman",
     "product line": "balance-pro",
     "name": "Ra Woman",
     "price": 1699,
     "imgUrl": "/imgs/ra-woman.jpeg"
   },
   {
-    "id": 9,
+    "id": "masai",
     "product line": "balance-pro",
     "name": "Masai",
     "price": 1699,
     "imgUrl": "/imgs/masai.jpeg"
   },
   {
-    "id": 10,
+    "id": "inti",
     "product line": "balance-pro",
     "name": "Inti",
     "price": 1699,
     "imgUrl": "/imgs/inti.jpeg"
   },
   {
-    "id": 11,
+    "id": "tatanka",
     "product line": "balance-pro",
     "name": "Tatanka",
     "price": 1699,
     "imgUrl": "/imgs/tatanka.jpeg"
   },
   {
-    "id": 12,
+    "id": "aqua-plus",
     "product line": "balance-pro",
     "name": "Aqua +",
     "price": 1699,
     "imgUrl": "/imgs/aqua-plus.jpeg"
   },
   {
-    "id": 13,
+    "id": "tanta",
     "product line": "step-up",
     "name": "Tanta",
     "price": 1449,
