@@ -12,7 +12,7 @@ const App = () => {
   return (
     <CartProvider>
       <NavBar />
-      <Container fluid className="mb-4">
+      <Container fluid className="mx-0 mb-4 px-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
