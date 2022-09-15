@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom"
 const Products = () => {
   const { lineId } = useParams()
   return (
-    <Container fluid>
+    <Container fluid className="h-100">
       {!lineId ? <h1 className="mb-4">All Products</h1> : null}
       {productLines.map(
         (line) =>

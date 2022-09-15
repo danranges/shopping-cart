@@ -14,7 +14,11 @@ const App = () => {
     <CartProvider>
       <ScrollToTop>
         <NavBar />
-        <Container fluid className="mx-0 mb-4 px-0  ">
+        <Container
+          fluid
+          style={{ minHeight: "80vh" }}
+          className="mx-0 mb-4 px-0 "
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
