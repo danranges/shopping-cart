@@ -7,13 +7,14 @@ import Cart from "./pages/Cart"
 import NotFound from "./pages/NotFound"
 import Container from "react-bootstrap/Container"
 import ScrollToTop from "./utils/ScrollToTop"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
     <CartProvider>
       <ScrollToTop>
         <NavBar />
-        <Container fluid className="mx-0 mb-4 px-0">
+        <Container fluid className="mx-0 mb-4 px-0  ">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Container>
+        <Footer />
       </ScrollToTop>
     </CartProvider>
   )
