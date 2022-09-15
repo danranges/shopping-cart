@@ -9,9 +9,9 @@ const HeroCarousel = () => {
     : imgsCarousel.find((obj) => obj.size === "sm").imgs
 
   return (
-    <Carousel ride>
-      {imgs.map((img) => (
-        <Carousel.Item>
+    <Carousel>
+      {imgs.map((img, idx) => (
+        <Carousel.Item key={idx}>
           <Image src={img} className="d-block w-100" />
         </Carousel.Item>
       ))}
