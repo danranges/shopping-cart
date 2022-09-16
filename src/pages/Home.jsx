@@ -14,14 +14,14 @@ const Home = () => {
         style={{ maxWidth: "800px", height: "100%" }}
         className="d-flex flex-column justify-content-center my-4 h-100"
       >
-        <Container className="d-flex justify-content-center mt-4">
+        <Container className="d-flex flex-column align-items-center my-4">
           <h2>IMPROVE YOUR PERFORMANCE</h2>
+          <p className="my-4 pb-4">
+            Tenaya has been proudly handcrafting climbing shoes in Spain since
+            1997, putting the needs of the climber first and designing the best
+            possible footwear to help climbers achieve their goals.
+          </p>
         </Container>
-        <p className="mb-4 pb-4">
-          Tenaya has been proudly handcrafting climbing shoes in Spain since
-          1997, putting the needs of the climber first and designing the best
-          possible footwear to help climbers achieve their goals.
-        </p>
         <Container className={`d-flex flex-${orientation} gap-1 mb-4`}>
           <Col>
             <Image
