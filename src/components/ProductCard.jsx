@@ -10,10 +10,8 @@ const ProductCard = ({ product }) => {
   const { id, name, price, imgUrl } = product
   const { getItemQty, incrementItem, decrementItem, removeItem } =
     UseShoppingCart()
-
   const qty = getItemQty(id)
   const promotion = promotions.find((item) => id === item.id)?.discount || 0
-  const adjPrice = Math.floor(price * (1 - promotion))
 
   return (
     <Card border="light">

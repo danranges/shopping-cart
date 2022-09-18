@@ -2,6 +2,7 @@ import { UseShoppingCart } from "../context/CartContext"
 import Container from "react-bootstrap/Container"
 import createUtilityClassName from "react-bootstrap/esm/createUtilityClasses"
 import EmptyCart from "../components/EmptyCart"
+import CartItem from "../components/CartItem"
 
 const Cart = () => {
   const { getCart } = UseShoppingCart()
@@ -12,10 +13,10 @@ const Cart = () => {
   }
   return (
     <Container fluid>
-      <h1 className="border-bottom">Your Cart</h1>
+      <h1 className="pb-2 border-bottom">Your Cart</h1>
 
-      {cart.map((item) => (
-        <p>{JSON.stringify(item)}</p>
+      {cart.map((item, idx) => (
+        <CartItem key={idx} item={item} />
       ))}
     </Container>
   )

@@ -1,0 +1,40 @@
+import { Container, Row, Col, Image } from "react-bootstrap"
+import promotions from "../data/promotions.json"
+import productInfo from "../data/products.json"
+import formatPrice from "../utils/formatPrice"
+import useMediaQuery from "../hooks/useMediaQuery"
+
+const CartItem = ({ item }) => {
+  const { id, qty } = item
+  const { name, price, imgUrl } = productInfo.find((item) => item.id === id)
+  const promotion = promotions.find((item) => item.id === id)?.discount || null
+  const adjPrice = !!promotion ? Math.floor(price * (1 - promotion)) : price
+  const isDesktop = useMediaQuery("(min-width: 764px)")
+
+  return (
+    <Container fluid className="d-flex border-bottom py-2">
+      <Image src={imgUrl} width="80px" className="me-2" />
+      <Container fluid>
+        <Row className="h-100 align-items-center">
+          <Col xs={6} sm>
+            {name}
+          </Col>
+          <Col xs={6} sm>
+            <span className={promotion && "text-danger"}>
+              {formatPrice(adjPrice)}
+            </span>
+            {promotion && isDesktop && (
+              <span className="text-muted ms-2">
+                <s>{formatPrice(price)}</s>
+              </span>
+            )}
+          </Col>
+          <Col>{"Qty: " + qty}</Col>
+          <Col>{formatPrice(qty * adjPrice)}</Col>
+        </Row>
+      </Container>
+    </Container>
+  )
+}
+
+export default CartItem
