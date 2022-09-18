@@ -5,7 +5,7 @@ const NotFound = () => {
     <Container fluid>
       <h1>Page Not Found</h1>
       <p>Sorry, the page you're looking for doesn't seem to exist.</p>
-      <Button as={Link} to="/">
+      <Button as={Link} to="/" variant="outline-secondary">
         Continue Shopping
       </Button>
     </Container>

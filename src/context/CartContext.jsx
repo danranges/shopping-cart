@@ -17,10 +17,10 @@ export function CartProvider({ children }) {
     return cart.find((item) => id === item.id)?.qty || 0
   }
 
-  const incrementItem = (id, adjPrice) => {
+  const incrementItem = (id) => {
     setCart((prevCart) =>
       prevCart.find((item) => id === item.id) == null
-        ? [...prevCart, { id, qty: 1, price: adjPrice }]
+        ? [...prevCart, { id, qty: 1 }]
         : prevCart.map((item) =>
             id === item.id ? { ...item, qty: item.qty + 1 } : item
           )

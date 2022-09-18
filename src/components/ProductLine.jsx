@@ -1,5 +1,4 @@
 import { Container, Row } from "react-bootstrap"
-import { useParams } from "react-router-dom"
 import productLines from "../data/productLines.json"
 
 const ProductLine = ({ line, children }) => {

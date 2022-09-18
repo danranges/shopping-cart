@@ -38,11 +38,7 @@ const ProductCard = ({ product }) => {
         </Card.Subtitle>
         <div className=" d-grid g-2 mt-auto position-relative">
           {qty === 0 ? (
-            <Button
-              variant="light"
-              size="md"
-              onClick={() => incrementItem(id, adjPrice)}
-            >
+            <Button variant="light" size="md" onClick={() => incrementItem(id)}>
               Add To Cart
             </Button>
           ) : (
