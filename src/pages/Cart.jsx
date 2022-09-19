@@ -1,6 +1,5 @@
 import { UseShoppingCart } from "../context/CartContext"
 import Container from "react-bootstrap/Container"
-import createUtilityClassName from "react-bootstrap/esm/createUtilityClasses"
 import EmptyCart from "../components/EmptyCart"
 import CartItem from "../components/CartItem"
 

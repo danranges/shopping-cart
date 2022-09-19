@@ -25,7 +25,6 @@ export function CartProvider({ children }) {
             id === item.id ? { ...item, qty: item.qty + 1 } : item
           )
     )
-    console.log(cart)
   }
 
   const decrementItem = (id) => {
