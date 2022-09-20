@@ -28,9 +28,9 @@ const CartItem = ({ item }) => {
       <Container fluid>
         <Row className="h-100 align-items-centerm me-2">
           <Col xs={6} sm>
-            <b>{name}</b>
+            <b style={{ fontSize: "0.9rem" }}>{name}</b>
           </Col>
-          <Col style={{ fontSize: "0.9rem" }}>
+          <Col style={{ fontSize: "0.85rem" }}>
             {!isSmallMobile && (
               <span className={promotion ? "text-danger" : "text-muted"}>
                 {formatPrice(adjPrice)}
@@ -42,15 +42,14 @@ const CartItem = ({ item }) => {
               </span>
             )}
           </Col>
-          <Col xs={6} sm style={{ fontSize: "0.9rem" }}>
+          <Col xs={6} sm style={{ fontSize: "0.85rem" }}>
             {"Qty: " + qty}
           </Col>
-          <Col xs={6} sm style={{ fontSize: "0.9rem" }}>
+          <Col xs={6} sm style={{ fontSize: "0.85rem" }}>
             {formatPrice(qty * adjPrice)}
           </Col>
         </Row>
       </Container>
-
       <ButtonGroup size="md">
         <Button variant="outline-secondary" onClick={() => decrementItem(id)}>
           -
