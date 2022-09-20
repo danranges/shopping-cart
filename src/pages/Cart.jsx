@@ -1,14 +1,13 @@
 import { UseShoppingCart } from "../context/CartContext"
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import { Button, Container, Row, Col } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import EmptyCart from "../components/EmptyCart"
 import CartItem from "../components/CartItem"
 import formatPrice from "../utils/formatPrice"
 import getCartTotal from "../utils/getCartTotal"
 
 const Cart = () => {
-  const { getCart } = UseShoppingCart()
+  const { getCart, emptyCart } = UseShoppingCart()
   const cart = getCart()
   const subtotalCart = formatPrice(getCartTotal(cart), 0.15)
   const totalCart = formatPrice(getCartTotal(cart), 0)
@@ -24,7 +23,7 @@ const Cart = () => {
       ))}
       <Container
         fluid
-        className="my-2 align-self-start"
+        className="my-4 align-self-start"
         style={{ maxWidth: "400px" }}
       >
         <h5>Order Summary</h5>
@@ -36,12 +35,20 @@ const Cart = () => {
           <Col xs={3}>Shipping</Col>
           <Col>kr 0</Col>
         </Row>
-        <Row className="border-top border-bottom">
+        <Row className="border-top border-bottom my-2 py-2">
           <Col xs={3}>
             <b>Total</b>
           </Col>
           <Col>{totalCart}</Col>
         </Row>
+        <Button
+          as={Link}
+          to="/checkout"
+          onClick={emptyCart}
+          variant="outline-secondary"
+        >
+          Checkout
+        </Button>
       </Container>
     </Container>
   )

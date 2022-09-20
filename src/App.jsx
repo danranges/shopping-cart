@@ -4,6 +4,7 @@ import NavBar from "./components/Nav"
 import Home from "./pages/Home"
 import Products from "./pages/Products"
 import Cart from "./pages/Cart"
+import Checkout from "./pages/Checkout"
 import NotFound from "./pages/NotFound"
 import Container from "react-bootstrap/Container"
 import ScrollToTop from "./utils/ScrollToTop"
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/products" element={<Products />} />
             <Route path="/products/:lineId" element={<Products />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Container>
