@@ -51,15 +51,15 @@ const Home = () => {
             website is to serve as an example shopping cart/storefront built
             with React.
           </p>
+          <Button
+            variant="outline-secondary"
+            as={Link}
+            to="/products/"
+            className=" w-100"
+          >
+            Go to Store
+          </Button>
         </Container>
-        <Button
-          variant="outline-secondary"
-          as={Link}
-          to="/products/"
-          className="mx-2"
-        >
-          Go to Store
-        </Button>
       </Container>
     </Container>
   )
