@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
+import useLocalStorage from "../hooks/useLocalStorage"
 
 const CartContext = React.createContext()
 
@@ -7,7 +8,7 @@ export function UseShoppingCart() {
 }
 
 export function CartProvider({ children }) {
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useLocalStorage("tenayaCart", [])
 
   const getCart = () => {
     return cart

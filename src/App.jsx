@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom"
 import { CartProvider } from "./context/CartContext"
-import NavBar from "./components/Nav"
 import Home from "./pages/Home"
 import Products from "./pages/Products"
 import Cart from "./pages/Cart"
@@ -8,6 +7,7 @@ import Checkout from "./pages/Checkout"
 import NotFound from "./pages/NotFound"
 import Container from "react-bootstrap/Container"
 import ScrollToTop from "./utils/ScrollToTop"
+import NavBar from "./components/Nav"
 import Footer from "./components/Footer"
 
 const App = () => {
