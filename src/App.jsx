@@ -21,11 +21,14 @@ const App = () => {
           className="mx-0 mb-4 px-0 "
         >
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/products/:lineId" element={<Products />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/shopping-cart/" element={<Home />} />
+            <Route path="/shopping-cart/products" element={<Products />} />
+            <Route
+              path="/shopping-cart/products/:lineId"
+              element={<Products />}
+            />
+            <Route path="/shopping-cart/cart" element={<Cart />} />
+            <Route path="/shopping-cart/checkout" element={<Checkout />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Container>
