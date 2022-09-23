@@ -55,7 +55,7 @@ const Home = () => {
             variant="outline-secondary"
             as={Link}
             to="/products/"
-            className=" w-100"
+            className="w-100"
           >
             Go to Store
           </Button>
