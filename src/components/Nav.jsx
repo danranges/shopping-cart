@@ -18,25 +18,31 @@ const NavBar = () => {
         <NavbarBs.Toggle />
         <NavbarBs.Collapse>
           <Nav>
-            <Nav.Link as={NavLink} to="/">
+            <Nav.Link as={NavLink} to="/shopping-cart/">
               Home
             </Nav.Link>
             <NavDropdown title="Products">
-              <NavDropdown.Item as={Link} to="/products">
+              <NavDropdown.Item as={Link} to="/shopping-cart/products">
                 All
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/products/aerial-plus">
+              <NavDropdown.Item
+                as={Link}
+                to="/shopping-cart/products/aerial-plus"
+              >
                 Aerial Plus
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/balance-pro">
+              <NavDropdown.Item
+                as={Link}
+                to="/shopping-cart/products/balance-pro"
+              >
                 Balance Pro
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/products/step-up">
+              <NavDropdown.Item as={Link} to="/shopping-cart/products/step-up">
                 Step Up
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={NavLink} to="/Cart">
+            <Nav.Link as={NavLink} to="/shopping-cart/cart">
               Cart
               {cartQty ? (
                 <Badge pill bg="secondary" className="mx-2">
