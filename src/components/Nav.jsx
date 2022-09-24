@@ -12,8 +12,8 @@ const NavBar = () => {
   return (
     <NavbarBs bg="light" className="shadow-sm mb-3" expand="sm" sticky="top">
       <Container fluid>
-        <NavbarBs.Brand href="/">
-          <img src="/imgs/tenaya.svg" height={"40px"} />
+        <NavbarBs.Brand href="/shopping-cart/">
+          <img src="./imgs/tenaya.svg" height={"40px"} />
         </NavbarBs.Brand>
         <NavbarBs.Toggle />
         <NavbarBs.Collapse>
