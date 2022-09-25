@@ -9,7 +9,7 @@ import getCartTotal from "../utils/getCartTotal"
 const Cart = () => {
   const { getCart, emptyCart } = UseShoppingCart()
   const cart = getCart()
-  const subtotalCart = formatPrice(getCartTotal(cart), 0.15)
+  const subtotalCart = formatPrice(getCartTotal(cart), 0)
   const totalCart = formatPrice(getCartTotal(cart), 0)
 
   if (cart.length === 0) {
