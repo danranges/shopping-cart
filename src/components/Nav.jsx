@@ -12,37 +12,31 @@ const NavBar = () => {
   return (
     <NavbarBs bg="light" className="shadow-sm mb-3" expand="sm" sticky="top">
       <Container fluid>
-        <NavbarBs.Brand href="/shopping-cart/">
+        <NavbarBs.Brand href="/">
           <img src="./imgs/tenaya.svg" height={"40px"} />
         </NavbarBs.Brand>
         <NavbarBs.Toggle />
         <NavbarBs.Collapse>
           <Nav>
-            <Nav.Link as={NavLink} to="/shopping-cart/">
+            <Nav.Link as={NavLink} to="/">
               Home
             </Nav.Link>
             <NavDropdown title="Products">
-              <NavDropdown.Item as={Link} to="/shopping-cart/products">
+              <NavDropdown.Item as={Link} to="/products">
                 All
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item
-                as={Link}
-                to="/shopping-cart/products/aerial-plus"
-              >
+              <NavDropdown.Item as={Link} to="/products/aerial-plus">
                 Aerial Plus
               </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/shopping-cart/products/balance-pro"
-              >
+              <NavDropdown.Item as={Link} to="/products/balance-pro">
                 Balance Pro
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/shopping-cart/products/step-up">
+              <NavDropdown.Item as={Link} to="/products/step-up">
                 Step Up
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={NavLink} to="/shopping-cart/cart">
+            <Nav.Link as={NavLink} to="/cart">
               Cart
               {cartQty ? (
                 <Badge pill bg="secondary" className="mx-2">

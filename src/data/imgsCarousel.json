@@ -2,23 +2,23 @@
   {
     "size": "lg",
     "imgs": [
-      "./imgs/carousel-lg/jimmy-webb2.jpeg",
-      "./imgs/carousel-lg/megos-canada1--2.jpeg",
-      "./imgs/carousel-lg/megos-fight--2.jpeg",
-      "./imgs/carousel-lg/perfecto-mundo--2.jpeg",
-      "./imgs/carousel-lg/ruana2.jpeg",
-      "./imgs/carousel-lg/sharma-margalef--2.jpeg"
+      "/imgs/carousel-lg/jimmy-webb2.jpeg",
+      "/imgs/carousel-lg/megos-canada1--2.jpeg",
+      "/imgs/carousel-lg/megos-fight--2.jpeg",
+      "/imgs/carousel-lg/perfecto-mundo--2.jpeg",
+      "/imgs/carousel-lg/ruana2.jpeg",
+      "/imgs/carousel-lg/sharma-margalef--2.jpeg"
     ]
   },
   {
     "size": "sm",
     "imgs": [
-      "./imgs/carousel-sm/jimmy-webb--m.jpeg",
-      "./imgs/carousel-sm/megos-canada1--m.jpeg",
-      "./imgs/carousel-sm/megos-fight--m.jpeg",
-      "./imgs/carousel-sm/perfecto-mundo--m.jpeg",
-      "./imgs/carousel-sm/ruana--m.jpeg",
-      "./imgs/carousel-sm/sharma-margalef--m.jpeg"
+      "/imgs/carousel-sm/jimmy-webb--m.jpeg",
+      "/imgs/carousel-sm/megos-canada1--m.jpeg",
+      "/imgs/carousel-sm/megos-fight--m.jpeg",
+      "/imgs/carousel-sm/perfecto-mundo--m.jpeg",
+      "/imgs/carousel-sm/ruana--m.jpeg",
+      "/imgs/carousel-sm/sharma-margalef--m.jpeg"
     ]
   }
 ]
